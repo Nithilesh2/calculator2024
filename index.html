@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="icon" href="favicon.png" />
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="calci">
+          <div class="toggl">
+            <div class="tog1">
+              <ion-icon name="toggle" class="togg1"></ion-icon>
+            </div>
+            <div class="tog2">
+              <ion-icon name="toggle" class="togg2"></ion-icon>
+            </div>
+          </div>
+          <form>
+            <div>
+              <center>
+                <input class="display" type="text" name="display" readonly />
+              </center>
+            </div>
+            <div>
+              <input
+                class="bt-c"
+                type="button"
+                value="AC"
+                onclick="display.value = ''"
+              />
+              <input
+                class="bt-b"
+                type="button"
+                value="DEL"
+                onclick="display.value = display.value.toString().slice(0,-1)"
+              />
+              <input
+                class="bt-pe"
+                type="button"
+                value="%"
+                onclick="display.value += '%'"
+              />
+              <input
+                class="bt-di"
+                type="button"
+                value="/"
+                onclick="display.value += '/'"
+              />
+            </div>
+            <div>
+              <input
+                class="bt-7"
+                type="button"
+                value="7"
+                onclick="display.value += '7'"
+              />
+              <input
+                class="bt-8"
+                type="button"
+                value="8"
+                onclick="display.value += '8'"
+              />
+              <input
+                class="bt-9"
+                type="button"
+                value="9"
+                onclick="display.value += '9'"
+              />
+              <input
+                class="bt-mu"
+                type="button"
+                value="*"
+                onclick="display.value += '*'"
+              />
+            </div>
+            <div>
+              <input
+                class="bt-4"
+                type="button"
+                value="4"
+                onclick="display.value += '4'"
+              />
+              <input
+                class="bt-5"
+                type="button"
+                value="5"
+                onclick="display.value += '5'"
+              />
+              <input
+                class="bt-6"
+                type="button"
+                value="6"
+                onclick="display.value += '6'"
+              />
+              <input
+                class="bt-mi"
+                type="button"
+                value="-"
+                onclick="display.value += '-'"
+              />
+            </div>
+            <div>
+              <input
+                class="bt-1"
+                type="button"
+                value="1"
+                onclick="display.value += '1'"
+              />
+              <input
+                class="bt-2"
+                type="button"
+                value="2"
+                onclick="display.value += '2'"
+              />
+              <input
+                class="bt-3"
+                type="button"
+                value="3"
+                onclick="display.value += '3'"
+              />
+              <input
+                class="bt-pl"
+                type="button"
+                value="+"
+                onclick="display.value += '+'"
+              />
+            </div>
+            <div>
+              <input
+                class="bt-0"
+                type="button"
+                value="0"
+                onclick="display.value += '0'"
+              />
+              <input
+                class="bt-do"
+                type="button"
+                value="."
+                onclick="display.value += '.'"
+              />
+              <input
+                class="bt-a"
+                type="button"
+                value="ANS"
+                onclick="display.value = eval(display.value) "
+              />
+              <!-- <input class="bt-e" type="button" value="=" onclick="display.value += ' = ' + eval(display.value)"> -->
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js" defer></script>
+  <script>
+    if (navigator.serviceWorker) {
+      navigator.serviceWorker.register("sw.js");
+    }
+  </script>
+</html>

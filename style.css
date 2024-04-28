@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main{
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  position: absolute;
+}
+
+.tog1 {
+  font-size: 50px;
+  position: relative;
+  left: 0;
+  top: 0;
+  color: rgb(201, 201, 201);
+  display: none;
+}
+
+.tog2 {
+  font-size: 50px;
+  transform: rotate(180deg);
+  position: relative;
+  left: 0;
+  bottom: 12px;
+  color: rgb(33, 33, 33);
+}
+
+form {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(5px 5px 2px rgb(1, 1, 1));
+  margin: 0;
+}
+
+.calci {
+  padding-top: 100px;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+  display: block;
+  justify-content: center;
+  text-align: center;
+}
+
+.display {
+  display: flex;
+  justify-content: flex-end;
+  height: 80px;
+  width: 310px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: right;
+  margin: 20px 0;
+  padding-right: 20px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: rgb(222, 243, 243);
+}
+
+.bt-c,
+.bt-pl,
+.bt-pe,
+.bt-mi,
+.bt-mu,
+.bt-di,
+.bt-do,
+.bt-e,
+.bt-a,
+.bt-b {
+  height: 74px;
+  width: 74px;
+  margin-top: 10px;
+  background-color: rgb(76, 94, 5);
+  font-size: 1.6rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 3px solid black;
+  color: white;
+  transition: 0.2s;
+}
+
+.bt-c {
+  background-color: rgb(252, 64, 64);
+}
+
+.bt-c:hover {
+  background-color: rgb(242, 128, 128);
+}
+
+.bt-a {
+  width: 154px;
+  background-color: rgb(14, 125, 88);
+  transition: 2;
+}
+
+.bt-pl:hover,
+.bt-pe:hover,
+.bt-mi:hover,
+.bt-mu:hover,
+.bt-di:hover,
+.bt-do:hover,
+.bt-a:hover,
+.bt-b:hover {
+  background-color: rgb(142, 164, 52);
+}
+
+.bt-a:hover {
+  background-color: rgb(14, 213, 147);
+}
+
+.bt-0 {
+  height: 74px;
+  width: 74px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  transition: 0.2s;
+}
+
+.bt-0:hover {
+  background-color: rgb(164, 164, 164);
+}
+
+.bt-1 {
+  height: 74px;
+  width: 74px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  transition: 0.2s;
+}
+
+.bt-1:hover {
+  background-color: rgb(164, 164, 164);
+}
+
+.bt-2 {
+  height: 74px;
+  width: 74px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  transition: 0.2s;
+}
+
+.bt-2:hover {
+  background-color: rgb(164, 164, 164);
+}
+
+.bt-3 {
+  height: 74px;
+  width: 74px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  transition: 0.2s;
+}
+
+.bt-3:hover {
+  background-color: rgb(164, 164, 164);
+}
+
+.bt-4 {
+  height: 74px;
+  width: 74px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  transition: 0.2s;
+}
+
+.bt-4:hover {
+  background-color: rgb(164, 164, 164);
+}
+
+.bt-5 {
+  height: 74px;
+  width: 74px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  transition: 0.2s;
+}
+
+.bt-5:hover {
+  background-color: rgb(164, 164, 164);
+}
+
+.bt-6 {
+  height: 74px;
+  width: 74px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  transition: 0.2s;
+}
+
+.bt-6:hover {
+  background-color: rgb(164, 164, 164);
+}
+
+.bt-7 {
+  height: 74px;
+  width: 74px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  transition: 0.2s;
+}
+
+.bt-7:hover {
+  background-color: rgb(164, 164, 164);
+}
+
+.bt-8 {
+  height: 74px;
+  width: 74px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  transition: 0.2s;
+}
+
+.bt-8:hover {
+  background-color: rgb(164, 164, 164);
+}
+
+.bt-9 {
+  height: 74px;
+  width: 74px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-top: 10px;
+  border-radius: 10px;
+  border: 3px solid black;
+  background-color: rgb(29, 29, 29);
+  color: white;
+  transition: 0.2s;
+}
+
+.bt-9:hover {
+  background-color: rgb(164, 164, 164);
+} /*# sourceMappingURL=style.css.map */
